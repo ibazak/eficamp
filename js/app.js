@@ -6,7 +6,6 @@ $(document).ready(function(){
     });
 
 
-
     $('.next').click(function() {
         var loginValue = $(".login-input").text();
         var passwordValue = $(".password-input").val();
@@ -30,6 +29,9 @@ $(document).ready(function(){
             }
         });
     };
+
+    var json = '{status: true}'
+
 });
 
 
