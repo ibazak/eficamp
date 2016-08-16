@@ -6,7 +6,7 @@ $(document).ready(function(){
     });
 
 
-    $('.next').click(function() {
+    $('.go').click(function() {
         var loginValue = $(".login-input").text();
         var passwordValue = $(".password-input").val();
         var LogPass = {
@@ -29,7 +29,7 @@ $(document).ready(function(){
             }
         });
     };
-    
+
 
 });
 

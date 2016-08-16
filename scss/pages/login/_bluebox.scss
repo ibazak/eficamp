@@ -14,8 +14,8 @@
   padding: 50px 50px 50px 50px;
 }
 
-.login {
-  margin-top:40px;
+.login, .login-data, .password-data{
+  margin-top: 40px;
   text-align: center;
   color: #FFFFFF;
   & h1 {
@@ -24,4 +24,20 @@
   & p {
     font-size: 20px;
   }
+}
+
+.login-data {
+  font-weight: 600;
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
+
+
+.password-input {
+  display: block;
+  overflow: hidden;
+}
+
+.password-icon {
+  float: right;
 }
