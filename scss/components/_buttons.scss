@@ -1,6 +1,9 @@
 .action-buttons {
   text-align: center;
   margin-top: 50px;
+  & a:hover {
+    background-color: #153a46;
+  }
 }
 
 .button {
