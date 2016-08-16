@@ -1,4 +1,21 @@
-.logo {
-  float: right;
-  background-image: url("../pics/login/logo.png");
+.action-buttons {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.button {
+  width: 150px;
+}
+
+.select-other {
+  background-color: inherit;
+  :hover {
+    background-color: #13bdd2;
+  }
+}
+
+.go-button {
+  background-color: #FFFFFF;
+  color: #13bdd2;
+
 }

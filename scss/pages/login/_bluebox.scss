@@ -35,9 +35,22 @@
 
 .password-input {
   display: block;
-  overflow: hidden;
 }
 
 .password-icon {
   float: right;
+}
+
+#alertbox {
+  color: #333;
+  border: none;
+  box-shadow: 0 5px 8px -6px rgba(0, 0, 0, .2);
+  &.correct {
+    border-left: 12px solid #0DBF4F;
+    background: #94D1AB;
+  }
+  &.wrong {
+    border-left: 12px solid #D65656;
+    background: #E8B5B5;
+  }
 }
