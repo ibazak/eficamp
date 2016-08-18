@@ -19,6 +19,7 @@ $(document).ready(function(){
             url: "https://efigence-camp.herokuapp.com/api/login",
             error: function(response) {
                 console.log(response.responseText);
+                // message = JSON.parse(response.responseText);
                 document.getElementById("alertbox").innerHTML  =
                     "Nieprawidłowy identyfikator lub hasło. <br>" +
                     "Upewnij się, że CAPS LOCK jest wyłączony i wpisz ponownie dane logowania";
