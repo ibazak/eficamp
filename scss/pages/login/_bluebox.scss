@@ -1,17 +1,18 @@
 .blue {
   height: 700px;
   width: 100%;
-  border: solid 1px #13bdd2;
+  border: solid 1px $blue;
   border-radius: 10px;
-}
-
-.lightblue {
-  width: 90%;
-  margin: auto;
-  margin-top: 100px;
-  border: solid 1px #45cbdb;
-  border-radius: 5px;
-  padding: 50px 50px 50px 50px;
+  background-color: $blue;
+  & .lightblue {
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    border: solid 1px $lightblue;
+    border-radius: 5px;
+    padding: 50px;
+    background-color: $lightblue;
+  }
 }
 
 .login, .login-data, .password-data{
