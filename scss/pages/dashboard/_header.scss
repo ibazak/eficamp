@@ -1,17 +1,36 @@
-.main-wrap {
-  margin: 10px 80px;
+a, p {
+  color: #FFFFFF;
+}
+
+.header {
+  padding: 0px 150px;
+  background-color: $blue;
+}
+
+.nav-right {
+  padding: 20px 0px;
+}
+
+.user-data {
+  padding-top: 5px;
+  margin-top: 10px;
+}
+
+.dash-nav-icon {
+  height: 100px;
+  width: 100px;
 }
 
 .logo2 {
-  height: 120px;
-  width: 120px;
+  height: 90px;
+  width: 90px;
   background-image: url("../pics/login/logo.png");
   background-size: cover;
 }
 
 .avatar2 {
-  height: 120px;
-  width: 120px;
+  height: 90px;
+  width: 90px;
   border-radius: 5px;
   background-image: url("../pics/login/avatar.jpg");
   background-size: cover;
@@ -19,6 +38,7 @@
 
 .logoava {
   display: inline-block;
+  margin-top: 10px;
 }
 
 .nav-ul {
@@ -33,4 +53,8 @@
   & p {
     padding-top: 10px;
   }
+}
+
+.right-li-border {
+  border-right: 1px solid #FFFFFF;
 }

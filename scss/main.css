@@ -1,0 +1,115 @@
+/*components imports*/
+.avatar {
+  height: 120px;
+  width: 120px;
+  border-radius: 100%;
+  margin: -110px auto auto;
+  background-image: url("../pics/login/avatar.jpg");
+  background-size: cover; }
+
+.logo {
+  float: right;
+  background-image: url("../pics/login/logo.png"); }
+
+.action-buttons {
+  text-align: center;
+  margin-top: 50px; }
+  .action-buttons a:hover {
+    background-color: #153a46; }
+
+.button {
+  width: 150px; }
+
+.select-other {
+  background-color: inherit; }
+  .select-other :hover {
+    background-color: #13bdd2; }
+
+.go-button {
+  background-color: #FFFFFF;
+  color: #13bdd2; }
+
+/* pages imports*/
+.background {
+  background-image: url("../pics/login/background.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  padding-top: 50px; }
+
+.blue {
+  height: 700px;
+  width: 100%;
+  border: solid 1px #13bdd2;
+  border-radius: 10px;
+  background-color: #13bdd2; }
+  .blue .lightblue {
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    border: solid 1px #45cbdb;
+    border-radius: 5px;
+    padding: 50px;
+    background-color: #45cbdb; }
+
+.login, .login-data, .password-data {
+  margin-top: 40px;
+  text-align: center;
+  color: #FFFFFF; }
+  .login h1, .login-data h1, .password-data h1 {
+    font-size: 40px; }
+  .login p, .login-data p, .password-data p {
+    font-size: 20px; }
+
+.login-data {
+  font-weight: 600;
+  font-size: 1.4em;
+  margin-bottom: 20px; }
+
+.password-input {
+  display: block; }
+
+.password-icon {
+  float: right; }
+
+#alertbox {
+  color: #333;
+  border: none;
+  box-shadow: 0 5px 8px -6px rgba(0, 0, 0, 0.2); }
+  #alertbox.correct {
+    border-left: 12px solid #0DBF4F;
+    background: #94D1AB; }
+  #alertbox.wrong {
+    border-left: 12px solid #D65656;
+    background: #E8B5B5; }
+
+.main-wrap {
+  margin: 10px 80px; }
+
+.logo2 {
+  height: 120px;
+  width: 120px;
+  background-image: url("../pics/login/logo.png");
+  background-size: cover; }
+
+.avatar2 {
+  height: 120px;
+  width: 120px;
+  border-radius: 5px;
+  background-image: url("../pics/login/avatar.jpg");
+  background-size: cover; }
+
+.logoava {
+  display: inline-block; }
+
+.nav-ul {
+  text-align: center; }
+
+.nav-li, .right-li {
+  display: inline-block;
+  padding-top: 20px;
+  width: 100px;
+  text-align: center; }
+  .nav-li p, .right-li p {
+    padding-top: 10px; }
