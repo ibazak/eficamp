@@ -1,5 +1,18 @@
-a, p {
+a, li {
   color: #FFFFFF;
+  :hover {
+    color: #FFFFFF;
+  }
+}
+
+li .preferences-item {
+  a {
+    color: $blue;
+  }
+  :hover {
+    color: $lightblue;
+    background-color: #E8E8E3;
+  }
 }
 
 .header {
@@ -14,6 +27,7 @@ a, p {
 .user-data {
   padding-top: 5px;
   margin-top: 10px;
+  color: #FFFFFF;
 }
 
 .dash-nav-icon {
@@ -22,6 +36,9 @@ a, p {
 }
 
 .logo2 {
+  position: relative;
+  margin-top: 10px;
+  float: right;
   height: 90px;
   width: 90px;
   background-image: url("../pics/login/logo.png");
@@ -29,6 +46,9 @@ a, p {
 }
 
 .avatar2 {
+  position: relative;
+  margin-top: 10px;
+  float: right;
   height: 90px;
   width: 90px;
   border-radius: 5px;
@@ -36,9 +56,11 @@ a, p {
   background-size: cover;
 }
 
-.logoava {
-  display: inline-block;
-  margin-top: 10px;
+.icon {
+  font-size: 1.6rem;
+}
+.icon-user {
+  font-size: 1.2rem;
 }
 
 .nav-ul {
@@ -50,8 +72,13 @@ a, p {
   padding-top: 20px;
   width: 100px;
   text-align: center;
+  &:hover {
+    color: #FFFFFF;
+  }
   & p {
     padding-top: 10px;
+  } &:hover {
+    color: #FFFFFF;
   }
 }
 

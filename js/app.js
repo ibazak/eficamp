@@ -19,12 +19,19 @@ $(document).ready(function(){
             url: "https://efigence-camp.herokuapp.com/api/login",
             error: function(response) {
                 console.log(response.responseText);
-                // message = JSON.parse(response.responseText);
-                document.getElementById("alertbox").innerHTML  =
-                    "Nieprawidłowy identyfikator lub hasło. <br>" +
-                    "Upewnij się, że CAPS LOCK jest wyłączony i wpisz ponownie dane logowania";
+                /*  {"status":false,"code":"l1","message":"No login\/password"}
+                    {"status":false,"code":"l2","message":"Wrong login\/password"}
+                */
+                var message = JSON.parse(response.responseText);
+                if (message.code == "l2"){
+                    document.getElementById("alertbox").innerHTML  =
+                    "Invalid login or password." + message.code;
+                } else  {
+                    document.getElementById("alertbox").innerHTML  =
+                    "Login and password are required.";
+                }
                 //.load() .replace() w divie
-                $("#alertbox").delay(3000).fadeOut(1000);
+                $("#alertbox").delay(4000).fadeOut(1000);
             },
             success: function(response) {
                 console.log(response);
