@@ -5,13 +5,13 @@ a, li {
   }
 }
 
-li .preferences-item {
+li .preferences-item{
   a {
     color: $blue;
   }
   :hover {
-    color: $lightblue;
-    background-color: #E8E8E3;
+    color: #FFFFFF;
+    background-color: #3A3B40;
   }
 }
 
@@ -65,21 +65,32 @@ li .preferences-item {
 
 .nav-ul {
   text-align: center;
+  margin-bottom: 0px;
 }
 
 .nav-li, .right-li {
+  position: relative;
   display: inline-block;
   padding-top: 20px;
   width: 100px;
   text-align: center;
   &:hover {
     color: #FFFFFF;
+    background-color: #3A3B40;
+    &:after {
+      border: 5px solid blue;
+    }
   }
   & p {
     padding-top: 10px;
   } &:hover {
     color: #FFFFFF;
   }
+}
+
+
+.nav-li:hover::after {
+  border:10px solid red;
 }
 
 .right-li-border {
