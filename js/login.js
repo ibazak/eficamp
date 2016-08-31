@@ -13,6 +13,7 @@ $(document).ready(function(){
 
             $(".password-input").val('');
             document.getElementById("alertbox").innerHTML = msg.message;
+            $("#alertbox").fadeIn(0);
             $("#alertbox").delay(2000).fadeOut(1000);
         }
 

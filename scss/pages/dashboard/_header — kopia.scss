@@ -92,26 +92,3 @@ li .preferences-item{
 .right-li-border {
   border-right: 1px solid #FFFFFF;
 }
-
-.finance-aside {
-  position: relative;
-  left: 200px;
-  margin-top: 30px;
-  & .add-span {
-    //vertical-align: middle;
-  }
-  & .button-aside {
-    width: 90px;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 8px 5px;
-    margin-bottom: 0px;
-    background-color: $lightblue;
-  }
-}
-
-.switch-group {
-  position: relative;
-  left: 150px;
-  margin-top: 20px;
-}

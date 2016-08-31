@@ -6,11 +6,8 @@
   }
 }
 
-.button {
-  width: 150px;
-}
-
 .select-other {
+  width: 150px;
   background-color: inherit;
   :hover {
     background-color: #13bdd2;
@@ -18,7 +15,70 @@
 }
 
 .go-button {
+  width: 150px;
   background-color: #FFFFFF;
   color: #13bdd2;
 
+}
+
+.finance-buttons {
+  margin-top: 20px;
+  & a {
+    width: 400px;
+  }
+}
+
+input.switch:empty
+{
+  display: none;
+}
+
+input.switch:empty ~ label
+{
+  position: relative;
+  right: 100px;
+  line-height: 1.6em;
+  text-indent: 4em;
+  margin: 0.2em 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input.switch:empty ~ label:before,
+input.switch:empty ~ label:after
+{
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 200px;
+  content: ' ';
+  width: 5em;
+  background-color: #FFFFFF;
+  border-radius: 0.3em;
+  -webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+}
+
+input.switch:empty ~ label:after
+{
+  width: 2.3em;
+  top: 0.1em;
+  bottom: 0.1em;
+  margin-left: 0.1em;
+  background-color: #D94188;
+  border-radius: 0.15em;
+}
+
+input.switch:checked ~ label:before
+{
+  background-color: #FFFFFF;
+}
+
+input.switch:checked ~ label:after
+{
+  margin-left: 2.4em;
 }
