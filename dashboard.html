@@ -9,69 +9,62 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="design/foundation-icons/foundation-icons.css">
     <link rel="stylesheet" href="css/dashboard.css">
+
+    <style></style>
 </head>
 
 <body>
 
 <header>
-
-    <div class="row expanded">
-        <nav class="header">
-            <div class="row expanded">
-                <div class="small-6 large-2 columns">
-                    <div class="avatar2"></div>
-                    <div class="logo2"></div>
-                </div>
-
-                <div class="small-6 large-2 columns">
-                    <div class="user-data">
-                        <p>Jan Kowalski</p>
-                    </div>
-                    <div class="user-data">
-                        <ul class="dropdown menu" data-dropdown-menu>
-                            <li><a><span class="fi-mail icon-user"></span></a></li>
-                            <li>
-                                <a href="#"><span class="fi-widget icon-user"></span></a>
-                                <ul class="menu">
-                                    <li class="preferences-item"><a href="#">Profile</a></li>
-                                    <li class="preferences-item"><a href="#">Settings</a></li>
-                                    <li class="preferences-item"><a href="#">Preferences</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-
-                <div class="small-4 large-4 columns">
-                    <ul class="nav-ul">
-                        <li class="nav-li"><a><span class="fi-home dash-nav-icon icon"></span>
-                            <p>HOME</p></a></li>
-                        <li class="nav-li"><a><span class="fi-graph-trend dash-nav-icon icon"></span>
-                            <p>ANALYSE</p></a></li>
-                        <li class="nav-li"><a><span class="fi-clipboard-pencil dash-nav-icon icon"></span>
-                            <p>PLAN</p></a></li>
-                        <li class="nav-li"><a><span class="fi-dollar-bill dash-nav-icon icon"></span>
-                            <p>EARN</p></a></li>
+    <nav class="row header">
+        <div class="small-12 large-4 columns nav-left">
+            <div class="logo2 picture user-data"></div>
+            <div class="avatar2 picture user-data"></div>
+            <div class="user-data">
+                <a href="#"><h2 class="name">Hayley Williams</h2></a>
+                <div>
+                    <ul class="" data-dropdown-menu>
+                        <li class="icon-user"><a><span class="fi-mail"></span></a></li>
+                        <li class="fi-widget icon-user">
+                            <!--<a href="#"><span class="fi-widget icon-user"></span></a>-->
+                            <!--<ul class="menu">-->
+                            <!--<li class="preferences-item"><a href="#">Profile</a></li>-->
+                            <!--<li class="preferences-item"><a href="#">Settings</a></li>-->
+                            <!--<li class="preferences-item"><a href="#">Preferences</a></li>-->
+                            <!--</ul>-->
+                        </li>
                     </ul>
                 </div>
-
-                <div class="small-12 large-4 columns">
-                    <ul class="nav-ul nav-right">
-                        <li class="right-li right-li-border"><a><span class="fi-magnifying-glass icon"></span></a></li>
-                        <li class="right-li"><a><span class="fi-power  icon"></span></a></li>
-                    </ul>
-                </div>
-
             </div>
-        </nav>
-    </div>
+
+        </div>
+
+        <div class="small-12 large-4 columns">
+            <ul class="nav-ul">
+                <li class="nav-li"><a><span class="fi-home dash-nav-icon icon"></span>
+                    <p>HOME</p></a></li>
+                <li class="nav-li"><a><span class="fi-graph-trend dash-nav-icon icon"></span>
+                    <p>ANALYSE</p></a></li>
+                <li class="nav-li"><a><span class="fi-clipboard-pencil dash-nav-icon icon"></span>
+                    <p>PLAN</p></a></li>
+                <li class="nav-li"><a><span class="fi-dollar-bill dash-nav-icon icon"></span>
+                    <p>EARN</p></a></li>
+            </ul>
+        </div>
+
+        <div class="small-12 large-4 columns">
+            <ul class="nav-ul nav-right">
+                <li class="right-li right-li-border"><a><span class="fi-magnifying-glass icon"></span></a></li>
+                <li class="right-li"><a><span class="fi-power  icon"></span></a></li>
+            </ul>
+        </div>
+    </nav>
 </header>
 
 <main>
     <div class="row">
         <h1 class="large-6 columns">Finance life stream</h1>
-        <div class="large-4 columns finance-aside">
+        <div class="large-6 columns finance-aside text-right">
             <span class="add-span">Add</span>
             <a class="button button-aside" href="#">BANK</a>
             <a class="button button-aside" href="#">PAYMENT</a>
@@ -80,20 +73,41 @@
     </div>
     <div class="row">
         <div class="large-3 columns">
-            <p>Balance</p>
+            <h2>Balance</h2>
             <span id="balance-value"></span>
         </div>
         <div class="large-3 columns">
-            <p>Available funds</p>
+            <h2>Available funds</h2>
             <span id="funds-value"></span>
         </div>
         <div class="large-3 columns end">
-            <p>Scheduled payments</p>
+            <h2>Scheduled payments</h2>
             <span id="payments-value"></span>
         </div>
-        <div class="large-2 columns end switch-group">
+        <div class="large-3 columns end switch-group text-right">
             <input type="checkbox" id="switch1" name="switch1" class="switch"/>
             <label for="switch1">Accounts analysis</label>
+        </div>
+    </div>
+    <div class="row large-12 columns diagram">
+
+    </div>
+    <div class="row">
+        <div class="large-6 columns half-component">
+            <h3>Products</h3>
+            <div class="products-component">
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+            </div>
+        </div>
+        <div class="large-6 columns half-component">
+            <h3>History</h3>
+            <ul class="list-component">
+                <!--dane z API-->
+            </ul>
         </div>
 
     </div>
