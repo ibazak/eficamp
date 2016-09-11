@@ -59,6 +59,15 @@ h3 {
     padding: 0.5em;
     height: 90px;
     background-color: #FFFFFF;
+    & .dashicon {
+      color: $dashicon;
+    }
+    > span {
+      margin-top: 5px;
+    }
+    > div {
+      margin-top: 10px;
+    }
   }
 }
 

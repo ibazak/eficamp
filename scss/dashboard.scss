@@ -1,6 +1,3 @@
-body {
-  background-color: #DEDEDE;
-}
 /*components imports*/
 @import "components/variables.scss";
 @import "components/avatar.scss";
@@ -13,3 +10,9 @@ body {
 
 @import "pages/dashboard/header.scss";
 @import "pages/dashboard/history.scss";
+@import "pages/dashboard/flaticon.scss";
+
+
+body {
+  background-color: $dash;
+}

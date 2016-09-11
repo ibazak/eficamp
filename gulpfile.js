@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var sass = require('gulp-sass');
 var $    = require('gulp-load-plugins')();
 
 var sassPaths = [
